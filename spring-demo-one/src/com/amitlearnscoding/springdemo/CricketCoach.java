@@ -3,6 +3,21 @@ package com.amitlearnscoding.springdemo;
 public class CricketCoach implements Coach {
 	
 	private FortuneService fortuneService;
+	
+	//create no-arg constructor
+	
+	public CricketCoach() {
+		System.out.println("CricketCoach: Inside no-arg constructor");
+	}
+	
+	
+	//our setter method
+	public void setFortuneService(FortuneService fortuneService) {
+		System.out.println("CricketCoach:  setter- setFortuneService");
+		this.fortuneService = fortuneService;
+	}
+
+
 
 	@Override
 	public String getDailyWorkout() {
