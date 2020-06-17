@@ -16,7 +16,8 @@
     </bean>
     
     <bean id="myClass"
-          class="com.amitlearnscoding.springdemo.TrackCoach">
+          class="com.amitlearnscoding.springdemo.TrackCoach"
+          scope="prototype">
     <!-- setup constructor injection -->
     <constructor-arg ref="myFortune"></constructor-arg>
     </bean>
