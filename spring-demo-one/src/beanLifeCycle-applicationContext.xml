@@ -17,7 +17,8 @@
     
     <bean id="myClass"
           class="com.amitlearnscoding.springdemo.TrackCoach"
-         scope="prototype">
+          init-method="doMyStartupStuff"
+          destroy-method="doMyCleanupStuffYoYo">
     <!-- setup constructor injection -->
     <constructor-arg ref="myFortune"></constructor-arg>
     </bean>
